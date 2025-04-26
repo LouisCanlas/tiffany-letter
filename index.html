@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>To Tiffany</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -15,18 +15,24 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     .container {
       background-color: white;
       border-radius: 1.5rem;
-      padding: 2.5rem;
+      padding: 3rem;
       max-width: 800px;
       width: 100%;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-      border: 1px solid #e5e7eb;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border: 2px solid #f3f4f6;
+      position: relative;
     }
     h1 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
       color: #1f2937;
@@ -35,15 +41,30 @@
     p {
       white-space: pre-wrap;
       color: #374151;
-      line-height: 1.75;
-      font-size: 1.125rem;
+      line-height: 1.85;
+      font-size: 1.2rem;
       font-weight: 300;
+      margin-bottom: 1.75rem;
     }
     .quote {
-      margin-top: 2rem;
-      font-style: italic;
+      margin-top: 3rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5rem;
       text-align: center;
       color: #6b7280;
+    }
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      color: #9ca3af;
+    }
+    .heart {
+      font-size: 1.5rem;
+      color: #f87171;
+      vertical-align: middle;
+      margin-left: 0.5rem;
     }
   </style>
 </head>
@@ -70,14 +91,17 @@ So with a heart full of care, I’ll be quietly stepping back—not because I fe
 You’ve left a mark on me that I’ll carry with quiet gratitude. If this is where our chapter closes, then I’ll hold it close with warmth. But if life allows us to meet again someday, I’ll still be glad to see you.
 
 Thank you for being a part of my heart’s story.
-
-With gentleness and care,
-Louis Canlas
     </p>
+
+    <div class="signature">
+      With gentleness and care,<br />
+      Louis Canlas <span class="heart">❤️</span>
+    </div>
+
     <p class="quote">
-      "And when you smile, the whole world stops and stares for a while...<br />
-      'Cause girl, you're amazing just the way you are"
-      <br />— Bruno Mars
+      "When I see your face, there's not a thing that I would change,<br />
+      'Cause you're amazing just the way you are."<br />
+      — Bruno Mars
     </p>
   </div>
 </body>
