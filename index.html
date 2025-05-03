@@ -6,7 +6,7 @@
   <title>Letter for Tiffany</title>
   <style>
     body {
-      background: linear-gradient(135deg, #f8f4ff, #e3d7ff);
+      background: linear-gradient(135deg, #f8f4ff 0%, #ece3ff 100%);
       font-family: 'Georgia', serif;
       color: #333;
       padding: 40px;
@@ -18,48 +18,62 @@
       margin: auto;
       background: #fff;
       padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(90, 62, 133, 0.2);
       border: 2px solid #d9c3f0;
-      position: relative;
-      animation: fadeIn 2s ease-in-out;
+      animation: fadeIn 2s ease-out;
     }
     h1 {
       text-align: center;
-      font-size: 2em;
+      font-size: 2.5em;
       color: #5a3e85;
       position: relative;
+      animation: slideDown 1.5s ease-out;
     }
     h1::after {
-      content: '';
-      display: block;
-      margin: 0.5em auto;
-      width: 60px;
-      height: 3px;
-      background: #c2a5e5;
-      border-radius: 2px;
+      content: '💌';
+      position: absolute;
+      top: -10px;
+      right: -30px;
+      font-size: 1.5em;
+      animation: floatHeart 2.5s infinite;
     }
     p {
       margin-bottom: 1.4em;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
     }
+    p:nth-of-type(1) { animation-delay: 0.5s; }
+    p:nth-of-type(2) { animation-delay: 1s; }
+    p:nth-of-type(3) { animation-delay: 1.5s; }
+    p:nth-of-type(4) { animation-delay: 2s; }
+    p:nth-of-type(5) { animation-delay: 2.5s; }
     .signature {
       margin-top: 2em;
       font-weight: bold;
       text-align: right;
-      color: #5a3e85;
-      font-style: italic;
+      animation-delay: 3s;
     }
     .gift-list {
       padding-left: 20px;
       margin-bottom: 1.4em;
+      list-style: none;
+      counter-reset: gift;
     }
     .gift-list li {
+      position: relative;
+      padding-left: 28px;
       margin-bottom: 1em;
-      transition: transform 0.3s ease, color 0.3s ease;
+      animation: fadeInUp 1s ease-out forwards;
     }
-    .gift-list li:hover {
-      transform: translateX(5px);
-      color: #5a3e85;
+    .gift-list li::before {
+      content: counter(gift) ".";
+      counter-increment: gift;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      color: #7a5ba0;
     }
     .lyrics {
       margin-top: 40px;
@@ -68,58 +82,43 @@
       color: #7a5ba0;
       opacity: 0;
       transform: translateY(20px);
-      animation: fadeInUp 2s ease-out forwards 1s;
+      animation: fadeInUp 2s ease-out forwards 3.5s;
     }
     @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.98);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
     }
-    .sparkle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px);
-      background-size: 20px 20px;
-      animation: sparkle 6s linear infinite;
-      opacity: 0.3;
-      z-index: 0;
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    @keyframes sparkle {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 100% 100%;
-      }
+    @keyframes floatHeart {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <div class="letter">
-    <div class="sparkle"></div>
     <h1>To Tiffany</h1>
     <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
 
     <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me.</p>
 
     <ul class="gift-list">
-      <li><strong>Batman necklace</strong> – reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are, and even if you don’t always see it, just know I do (it’s actually one of the things that attracted me to you), and you should be proud of it.</li>
-      <li><strong>Cat bracelet with Miso’s name</strong> – for the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see. Whoever you end up with once you’re ready to venture back into love again will be lucky to experience that part of you.</li>
+      <li><strong>1. Batman necklace</strong> – reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are, and even if you don’t always see it, just know I do (it’s actually one of the things that attracted me to you), and you should be proud of it.</li>
+      <li><strong>2. Cat bracelet</strong> – for the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see. Whoever you end up with once you’re ready to venture back into love again will be lucky to experience that part of you. And if you decide instead to just enjoy your single life for a while, like you’ve mentioned before, I support that just as fully too—as long as you’re happy, that’s what matters most to me.</li>
     </ul>
 
     <p>These aren’t meant to win you over or anything—they’re just pieces of you that stood out to me. Plus, I know you enjoy a bit of princess treatment, so… here’s a little of that too.</p>
