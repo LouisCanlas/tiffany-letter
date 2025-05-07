@@ -1,174 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Letter for Tiffany</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #f8f4ff 0%, #ece3ff 100%);
-      font-family: 'Georgia', serif;
-      color: #333;
-      padding: 20px;
-      line-height: 1.8;
-      overflow-x: hidden;
-      margin: 0;
-    }
-    .letter {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(90, 62, 133, 0.2);
-      border: 2px solid #d9c3f0;
-      animation: fadeIn 2s ease-out;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      color: #5a3e85;
-      position: relative;
-      animation: slideDown 1.5s ease-out;
-      margin-bottom: 1em;
-    }
-    p {
-      margin-bottom: 1.4em;
-      opacity: 0;
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    p:nth-of-type(1) { animation-delay: 0.5s; }
-    p:nth-of-type(2) { animation-delay: 1s; }
-    p:nth-of-type(3) { animation-delay: 1.2s; }
-    p:nth-of-type(4) { animation-delay: 1.5s; }
-    p:nth-of-type(5) { animation-delay: 2s; }
-    p:nth-of-type(6) { animation-delay: 2.5s; }
-    p:nth-of-type(7) { animation-delay: 3s; }
-    p:nth-of-type(8) { animation-delay: 3.5s; }
-    p:nth-of-type(9) { animation-delay: 4s; }
-    p:nth-of-type(10) { animation-delay: 4.5s; }
-    p:nth-of-type(11) { animation-delay: 5s; }
-    .signature {
-      margin-top: 2em;
-      font-weight: bold;
-      text-align: right;
-      animation-delay: 5.5s;
-    }
-    .gift-list {
-      padding-left: 20px;
-      margin-bottom: 1.4em;
-      list-style: none;
-      counter-reset: gift;
-    }
-    .gift-list li {
-      position: relative;
-      padding-left: 28px;
-      margin-bottom: 1em;
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    .gift-list li::before {
-      content: counter(gift) ".";
-      counter-increment: gift;
-      position: absolute;
-      left: 0;
-      top: 0;
-      font-weight: bold;
-      color: #7a5ba0;
-    }
-    .lyrics {
-      margin-top: 40px;
-      text-align: center;
-      font-style: italic;
-      color: #7a5ba0;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 2s ease-out forwards 6s;
-      font-size: 1.1em;
-    }
-    .lyrics::before,
-    .lyrics::after {
-      content: "\266B";
-      margin: 0 8px;
-      color: #a58acc;
-      font-size: 1.3em;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.98); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media screen and (max-width: 600px) {
-      .letter {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-      body {
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter to Tiffany</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .letter-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .letter-section.visible {
+            display: block;
+            opacity: 1;
+        }
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            text-align: justify;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 30px;
+        }
+        .author {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="letter">
-    <h1>To Tiffany</h1>
-    <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
 
-    <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me.</p>
+    <div class="container">
+        <h1>Letter to Tiffany</h1>
 
-    <ul class="gift-list">
-      <li><strong>Batman necklace</strong> – I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</li>
-      <li><strong>Cat bracelet</strong> – I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see. Whether you end up in a relationship again (that will be a very lucky person!) or choose to just keep being your independent, radiant self, I hope you always feel loved and supported.</li>
-    </ul>
+        <div id="section-1" class="letter-section">
+            <p>To Tiffany,</p>
+            <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
+        </div>
 
-    <p>You’ve been a lovely part of my days… and something tells me that won’t change anytime soon.</p>
+        <div id="section-2" class="letter-section">
+            <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me.</p>
+            <p><strong>Batman necklace</strong> – I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</p>
+            <p><strong>Cat bracelet</strong> – I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see. Whether you end up in a relationship again (that will be a very lucky person!) or choose to just keep being your independent, radiant self, I hope you always feel loved and supported.</p>
+        </div>
 
-    <p>Whether you end up in a relationship again (that will be a very lucky person!) or choose to stay single, I hope you keep giving that same light to the world, just like you gave it to me.</p>
+        <div id="section-3" class="letter-section">
+            <p>I got you these because I thought they’d mean something personal—not because I expected anything in return—they’re just pieces of you that stood out to me. And you never have to wear them if you don’t want to. I just wanted to give you something that could be a soft reminder of your strength and your softness, and how they both coexist in you so effortlessly.</p>
+            <p>Plus, I know you enjoy a bit of princess treatment, so… here’s a little of that too.</p>
+        </div>
 
-    <p>I got you these because I thought they’d mean something personal—not because I expected anything in return—they’re just pieces of you that stood out to me. And you never have to wear them if you don’t want to. I just wanted to give you something that could be a soft reminder of your strength and your softness, and how they both coexist in you so effortlessly.</p>
+        <div id="section-4" class="letter-section">
+            <p>I want you to know that I genuinely care about you—not just the idea of you, but you, as a person. Whether or not I’m someone you ever feel the same way about, I want you to feel seen, heard, and safe. That matters to me more than anything else.</p>
+        </div>
 
-    <p>Plus, I know you enjoy a bit of princess treatment, so… here’s a little of that too.</p>
+        <div id="section-5" class="letter-section">
+            <p>While I’m away for the next 6 months, I’m going to focus on growing and becoming the best version of myself—for someone amazing I’ll get to meet or maybe even cross paths with again. You deserve that too—someone who gets you, supports you, and brings out your smile without even trying.</p>
+            <p>And if someday, your heart ever feels differently… I’d be lying if I said I wouldn’t still want to see where it could go. But for now, I’ll leave that thought floating gently in the background—no pressure, no expectations. Just a soft little “maybe.”</p>
+        </div>
 
-    <p>I want you to know that I genuinely care about you—not just the idea of you, but you, as a person. Whether or not I’m someone you ever feel the same way about, I want you to feel seen, heard, and safe. That matters to me more than anything else.</p>
+        <div id="section-6" class="letter-section">
+            <p>I’m really going to miss you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it.</p>
+            <p>I’m proud of who you are and who you’re becoming. You got this—I believe in you.</p>
+        </div>
 
-    <p>While I’m away for the next 6 months, I’m going to focus on growing and becoming the best version of myself—for someone amazing I’ll get to meet or maybe even cross paths with again.</p>
+        <div id="section-7" class="letter-section">
+            <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. Always.</p>
+        </div>
 
-    <p>You deserve that too—someone who gets you, supports you, and brings out your smile without even trying.</p>
+        <div id="section-8" class="letter-section">
+            <p>You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
+        </div>
 
-    <p>And if someday, your heart ever feels differently… I’d be lying if I said I wouldn’t still want to see where it could go.</p>
-
-    <p>But for now, I’ll leave that thought floating gently in the background—no pressure, no expectations. Just a soft little “maybe.”</p>
-
-    <p>I’m really going to miss you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it.</p>
-
-    <p>I’m proud of who you are and who you’re becoming. You got this—I believe in you.</p>
-
-    <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. Always.</p>
-
-    <p>You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
-
-    <p class="signature">—Louis</p>
-
-    <div class="lyrics">
-      “And when Tiffany smiles<br>
-      The whole world stops and stares for a while<br>
-      'Cause, girl, you're amazing<br>
-      Just the way you are.”<br> — Bruno Mars
+        <div id="quote" class="quote">
+            <p>“And when Tiffany smiles<br>The whole world stops and stares for a while<br>'Cause, girl, you're amazing<br>Just the way you are.” — Bruno Mars</p>
+            <p class="author">—Louis</p>
+        </div>
     </div>
-  </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".letter-section");
+            let delay = 0;
+            
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add("visible");
+                }, delay);
+                delay += 2000; // Delay for next section
+            });
+        });
+    </script>
+
 </body>
 </html>
