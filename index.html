@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>To Tiffany</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #fff0f5;
-      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 2rem;
-      line-height: 1.8;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
       color: #5a3f4b;
+      background: linear-gradient(-45deg, #ffe6f0, #f3e6ff, #ffe6f0, #f3e6ff);
+      background-size: 400% 400%;
+      animation: backgroundShift 20s ease infinite;
       display: flex;
       justify-content: center;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
     }
 
     .letter {
       max-width: 800px;
       background: #ffffff;
       padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(216, 180, 226, 0.3);
+      margin: 3rem 1rem;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(216, 180, 226, 0.4);
       border: 2px solid #f7cce5;
-      animation: fadeIn 1.5s ease-in;
+      animation: fadeInMain 2s ease forwards;
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 3.2rem;
       text-align: center;
       color: #d8b4e2;
-      animation: slideIn 1.5s ease-out;
+      margin-bottom: 2rem;
+      animation: slideDown 2s ease-out;
     }
 
     p {
-      margin-bottom: 1.2rem;
       font-size: 1.1rem;
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      animation: fadeInPara 1s ease forwards;
+      animation-delay: calc(var(--i, 1) * 0.4s);
     }
 
-    .gift-list {
+    ul.gift-list {
       list-style: none;
       padding-left: 0;
-      margin-bottom: 1.5rem;
+      margin: 2rem 0;
     }
 
     .gift-list li {
       background: #f7cce5;
-      border-left: 4px solid #d8b4e2;
+      border-left: 5px solid #d8b4e2;
       padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 6px;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gift-list li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(216, 180, 226, 0.3);
     }
 
     .gift-list li strong {
@@ -60,27 +74,53 @@
     }
 
     .signature {
-      margin-top: 2rem;
       font-family: 'Great Vibes', cursive;
       font-size: 2rem;
       text-align: right;
       color: #d8b4e2;
+      margin-top: 3rem;
+      opacity: 0;
+      animation: fadeInPara 1s ease forwards;
+      animation-delay: 4s;
     }
 
     .lyrics {
-      margin-top: 2rem;
-      font-style: italic;
       text-align: center;
-      font-size: 1.05rem;
+      font-style: italic;
       color: #7a5575;
+      margin-top: 3rem;
+      font-size: 1.05rem;
+      opacity: 0;
+      animation: fadeInPara 1s ease forwards;
+      animation-delay: 4.5s;
     }
 
-    @keyframes fadeIn {
+    em {
+      font-style: italic;
+      color: #b466a3;
+    }
+
+    strong {
+      font-weight: bold;
+      color: #8c4c94;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeInMain {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes slideIn {
+    @keyframes fadeInPara {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
     }
@@ -90,22 +130,22 @@
   <div class="letter">
     <h1>To Tiffany</h1>
 
-    <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: <em>I’m really sorry if I ever made you feel pressured</em> to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and <strong>I truly regret</strong> if it came across that way. <em><strong>Thank you</strong></em> for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
+    <p style="--i:1;">I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: <em>I’m really sorry if I ever made you feel pressured</em> to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and <strong>I truly regret</strong> if it came across that way. <em><strong>Thank you</strong></em> for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
 
-    <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me. These are simple, meaningful things I thought would express my admiration and care, and I wanted you to have something personal that reflects your unique self.</p>
+    <p style="--i:2;">Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me. These are simple, meaningful things I thought would express my admiration and care, and I wanted you to have something personal that reflects your unique self.</p>
 
-    <p><strong>For the girl who says she’s independent</strong>, but still lights up just a little more when princess treatment is involved—these are for you.</p>
+    <p style="--i:3;"><strong>For the girl who says she’s independent</strong>, but still lights up just a little more when princess treatment is involved—these are for you.</p>
 
     <ul class="gift-list">
       <li><strong>Batman necklace</strong> – I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how <em><strong>strong, unique, and quietly powerful</strong></em> you are. Even if you don’t always see it, <strong>just know I do</strong>. That strength—subtle but unmistakable—was one of the first things that drew me to you.</li>
       <li><strong>Cat bracelet</strong> – I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. <em>I notice you light up at the smallest things</em>, and <strong>that’s something really beautiful to see</strong>.</li>
     </ul>
 
-    <p>The biggest message I want to share in this letter is this: <strong>More than anything, I hope you find someone who brings you the kind of love and joy you genuinely deserve.</strong> And if you are ready to venture back into the world of love, <strong>may that love you find be everlasting and everything you could ever wish for and more</strong>. That’s what <em>I’ll pray happens for you every night until it comes true</em>.</p>
+    <p style="--i:4;">The biggest message I want to share in this letter is this: <strong>More than anything, I hope you find someone who brings you the kind of love and joy you genuinely deserve.</strong> And if you are ready to venture back into the world of love, <strong>may that love you find be everlasting and everything you could ever wish for and more</strong>. That’s what <em>I’ll pray happens for you every night until it comes true</em>.</p>
 
-    <p>While I’m away for the next 6 months, <strong>I’m going to focus on growing and becoming the best version of myself</strong>. Part of that is because I want to be the best person I can be—not just for myself, but for the person I’ll eventually be lucky enough to share my life with. <em>I want to be able to love them with everything I have</em>, and make sure that when the time comes, <strong>I’m ready to give my best</strong>.</p>
+    <p style="--i:5;">While I’m away for the next 6 months, <strong>I’m going to focus on growing and becoming the best version of myself</strong>. Part of that is because I want to be the best person I can be—not just for myself, but for the person I’ll eventually be lucky enough to share my life with. <em>I want to be able to love them with everything I have</em>, and make sure that when the time comes, <strong>I’m ready to give my best</strong>.</p>
 
-    <p><strong>I’m really going to miss you</strong>—but more than that, <em>I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it</em>. <strong>I’m proud of who you are</strong>, and <strong>I’m confident that you’re going to continue growing into someone even more amazing</strong>. <em>You got this—I believe in you.</em> If life ever feels heavy, or if you ever need someone—<strong>really need someone</strong>—<em><strong>I’m here. Always.</strong></em> <em>You’ve been one of the sweetest, brightest parts of my life so far</em>. <strong>Thank you for letting me see even a small part of your world.</strong></p>
+    <p style="--i:6;"><strong>I’m really going to miss you</strong>—but more than that, <em>I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it</em>. <strong>I’m proud of who you are</strong>, and <strong>I’m confident that you’re going to continue growing into someone even more amazing</strong>. <em>You got this—I believe in you.</em> If life ever feels heavy, or if you ever need someone—<strong>really need someone</strong>—<em><strong>I’m here. Always.</strong></em> <em>You’ve been one of the sweetest, brightest parts of my life so far</em>. <strong>Thank you for letting me see even a small part of your world.</strong></p>
 
     <p class="signature">—Louis</p>
 
