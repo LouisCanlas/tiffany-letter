@@ -71,6 +71,33 @@
       font-style: italic;
       margin-top: 20px;
     }
+
+    /* Gift List Styling */
+    .gift-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 1.8rem 0;
+    }
+
+    .gift-list li {
+      background: #f7cce5;
+      border-left: 4px solid #d8b4e2;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 0.96rem;
+    }
+
+    .gift-list li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 18px rgba(216, 180, 226, 0.2);
+    }
+
+    .gift-list li strong {
+      color: #5a3f4b;
+      font-weight: normal;
+    }
   </style>
 </head>
 <body>
@@ -84,9 +111,10 @@
 
   <p>For the girl who is the definition of "<span class="highlight">Ms. Independent</span>" but still lights up just a little more when princess treatment is involved—these are for you.</p>
 
-  <p><strong>Batman necklace:</strong> I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</p>
-
-  <p><strong>Cat bracelet:</strong> I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see.</p>
+  <ul class="gift-list">
+    <li><strong>Batman necklace</strong> – I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</li>
+    <li><strong>Cat bracelet</strong> – I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see.</li>
+  </ul>
 
   <div class="section-break"></div>
 
