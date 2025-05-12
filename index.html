@@ -10,27 +10,27 @@
       font-family: 'Quicksand', 'Segoe UI', sans-serif;
       background-color: #fff0f5;
       color: #333;
-      padding: 20px;
+      padding: 40px;
+      max-width: 800px;
       margin: auto;
       border: 3px dashed #ffb6c1;
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hello_Kitty_Bow.svg/800px-Hello_Kitty_Bow.svg.png');
       background-repeat: no-repeat;
-      background-size: 60px;
+      background-size: 100px;
       background-position: top right;
-      box-sizing: border-box;
     }
 
     h1 {
       text-align: center;
       color: #ff69b4;
       font-weight: 600;
-      font-size: 28px;
-      margin-bottom: 30px;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.7;
+      font-size: 18px;
+      line-height: 1.8;
     }
 
     .highlight {
@@ -44,26 +44,26 @@
     }
 
     .section-break {
-      margin: 30px 0;
+      margin: 40px 0;
       border-top: 2px dashed #ffb6c1;
     }
 
     .standout {
       text-align: center;
-      font-size: 20px;
+      font-size: 22px;
       color: #ff1493;
       font-weight: bold;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
     .closer {
-      font-size: 18px;
+      font-size: 20px;
       color: #c71585;
       font-weight: bold;
       font-style: italic;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 60px;
     }
 
     .lyrics {
@@ -75,7 +75,7 @@
     .gift-list {
       list-style: none;
       padding-left: 0;
-      margin: 1.5rem 0;
+      margin: 1.8rem 0;
     }
 
     .gift-list li {
@@ -85,7 +85,7 @@
       border-radius: 8px;
       margin-bottom: 1rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      font-size: 0.95rem;
+      font-size: 0.96rem;
     }
 
     .gift-list li:hover {
@@ -98,37 +98,29 @@
       font-weight: normal;
     }
 
+    /* Styling for the clickable "Iris" link */
     .iris-link {
-      color: #b03060;
+      color: #ff1493;
       font-weight: bold;
+      cursor: pointer;
       text-decoration: underline;
+      animation: blink 1.5s infinite;
     }
 
-    .iris-link:hover {
-      color: #e75480;
+    /* Animation to make the word "Iris" blink */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.6; }
+      100% { opacity: 1; }
     }
 
-    @media (max-width: 480px) {
-      body {
-        padding: 15px;
-        background-size: 40px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      p, .gift-list li {
-        font-size: 15px;
-      }
-
-      .standout {
-        font-size: 18px;
-      }
-
-      .closer {
-        font-size: 16px;
-      }
+    /* Styling for the "Tap me" cue */
+    .tap-cue {
+      font-size: 16px;
+      color: #ff69b4;
+      font-weight: normal;
+      margin-left: 5px;
+      display: inline-block;
     }
   </style>
 </head>
@@ -152,7 +144,7 @@
 
   <p>You’ve been through more than most people realize, and yet you still show up with a light in your eyes. <span class="highlight">That’s strength, Tiffany.</span> Quiet and real. I admire that about you more than you know.</p>
 
-  <p>More than anything, I just wanted to see you truly happy—in every way that matters. And I’ll be honest: part of me quietly wished that maybe, just maybe, I could be the one beside you in that happiness. I think a part of me was hoping you’d become my <a href="https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs?si=ff16c82a4a0b4feb" target="_blank" class="iris-link">Iris</a>—not just someone I cared deeply about, but someone I could share something real with.</p>
+  <p>More than anything, I just wanted to see you truly happy—in every way that matters. And I’ll be honest: part of me quietly wished that maybe, just maybe, I could be the one beside you in that happiness. I think a part of me was hoping you’d become my <span class="iris-link" onclick="window.open('https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs?si=ff16c82a4a0b4feb', '_blank')">Iris</span><span class="tap-cue">—tap me</span>.</p>
 
   <p>There’s a lyric in that song that says, <span class="lyrics">“You’re the closest to heaven that I’ll ever be, and I don’t want to go home right now.”</span> And to me, that captured what it felt like being around you. In those small, quiet moments—your laughter, your stories, your quirks—it felt like time slowed down, like things just… made sense. Like I was exactly where I needed to be.</p>
 
@@ -175,5 +167,6 @@
   'Cause, girl, you're amazing<br>
   Just the way you are.”<br>
   — Bruno Mars</p>
+
 </body>
 </html>
