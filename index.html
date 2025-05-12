@@ -2,186 +2,239 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>To Tiffany</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Indie+Flower&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letter to Tiffany</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(145deg, #fff0f5, #ffe6f0);
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      min-height: 100vh;
-      position: relative;
-    }
-
-    .letter {
-      max-width: 850px;
-      background: #fffafb;
-      padding: 2.5rem;
-      margin: 2rem 1rem;
-      border-radius: 24px;
-      border: 4px dashed #ffb6c1;
-      box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
-      position: relative;
-      animation: fadeIn 1s ease forwards;
-    }
-
-    .letter::before {
-      content: "🎀";
-      font-size: 2rem;
-      position: absolute;
-      top: -25px;
-      left: 20px;
-    }
-
-    .letter::after {
-      content: "🌸";
-      font-size: 1.8rem;
-      position: absolute;
-      bottom: -20px;
-      right: 30px;
+      font-family: 'Quicksand', 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      border: 3px dashed #ffb6c1;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hello_Kitty_Bow.svg/800px-Hello_Kitty_Bow.svg.png');
+      background-repeat: no-repeat;
+      background-size: 100px;
+      background-position: top right;
     }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.8rem;
       text-align: center;
       color: #ff69b4;
-      margin-bottom: 1.8rem;
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
     p {
-      font-size: 1rem;
-      margin-bottom: 1.2rem;
-      line-height: 1.7;
-      color: #5a3f4b;
+      font-size: 18px;
+      line-height: 1.8;<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letter to Tiffany</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      border: 3px dashed #ffb6c1;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hello_Kitty_Bow.svg/800px-Hello_Kitty_Bow.svg.png');
+      background-repeat: no-repeat;
+      background-size: 100px;
+      background-position: top right;
     }
 
-    .gift-list {
-      margin: 2rem 0;
+    h1 {
+      text-align: center;
+      color: #ff69b4;
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
-    .gift-item {
-      background: #ffe4ec;
-      border-left: 5px solid #ffb6c1;
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1.2rem;
-      color: #5a3f4b;
-      font-size: 0.97rem;
-      line-height: 1.6;
+    p {
+      font-size: 18px;
+      line-height: 1.8;
     }
 
-    .signature {
-      font-family: 'Indie Flower', cursive;
-      font-size: 1.6rem;
-      text-align: right;
-      color: #d470a2;
-      margin-top: 2.8rem;
+    .highlight {
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    .soft {
+      font-style: italic;
+      color: #cc3366;
+    }
+
+    .section-break {
+      margin: 40px 0;
+      border-top: 2px dashed #ffb6c1;
+    }
+
+    .standout {
+      text-align: center;
+      font-size: 22px;
+      color: #ff1493;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .closer {
+      font-size: 20px;
+      color: #c71585;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-top: 60px;
     }
 
     .lyrics {
-      text-align: center;
+      color: #8b008b;
       font-style: italic;
-      color: #a0527d;
-      margin-top: 2.2rem;
-      font-size: 0.98rem;
-    }
-
-    em {
-      font-style: italic;
-      color: inherit;
-    }
-
-    strong {
-      font-weight: normal;
-      color: #4d3a47;
-    }
-
-    .marilag {
-      font-style: italic;
-      color: #cc1e5d;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      .letter {
-        padding: 1.8rem;
-      }
-
-      h1 {
-        font-size: 2.4rem;
-      }
-
-      p, .gift-item {
-        font-size: 0.94rem;
-      }
-
-      .signature {
-        font-size: 1.4rem;
-      }
-
-      .lyrics {
-        font-size: 0.9rem;
-      }
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="letter">
-    <h1>To Tiffany</h1>
+  <h1>To Tiffany</h1>
 
-    <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. This is from the heart: I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
+  <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. <span class="soft">This is from the heart:</span> I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
 
-    <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me. These are simple, meaningful things I thought would express my admiration and care, and I wanted you to have something personal that reflects your unique self.</p>
+  <div class="section-break"></div>
 
-    <p>For the girl who is the definition of "Ms. Independent" but still lights up just a little more when princess treatment is involved—these are for you.</p>
+  <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me. These are simple, meaningful things I thought would express my admiration and care, and I wanted you to have something personal that reflects your unique self.</p>
 
-    <div class="gift-list">
-      <div class="gift-item">
-        <strong>Batman necklace:</strong> I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.
-      </div>
-      <div class="gift-item">
-        <strong>Cat bracelet:</strong> I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see.
-      </div>
-    </div>
+  <p>For the girl who is the definition of "<span class="highlight">Ms. Independent</span>" but still lights up just a little more when princess treatment is involved—these are for you.</p>
 
-    <p>You’ve been through more than most people realize, and yet you still show up with a light in your eyes. That’s strength, Tiffany. Quiet and real. I admire that about you more than you know.</p>
+  <p><strong>Batman necklace:</strong> I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</p>
 
-    <p>More than anything, I just want to see you happy—really, deeply happy, in whatever shape that takes. And truth be told, I wished I could have been that person who gives you that happiness, the person that never chooses to give up on you, the person who loves you the way you deserve, and loves you exactly for who you are.</p>
+  <p><strong>Cat bracelet:</strong> I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see.</p>
 
-    <p style="text-align: center; font-weight: bold; color: #cc1e5d; font-style: italic; font-size: 1.2rem;">
-      Because you deserve that.
-    </p>
+  <div class="section-break"></div>
 
-    <p>But whether it’s with someone else or on your own, your happiness is what matters most to me, and I hope life gives you all the joy it can offer. And if you are ever ready to venture back into the world of love, may that love you find be everlasting and everything you could ever wish for and more. That’s what I’ll pray happens for you every night until it comes true.</p>
+  <p>You’ve been through more than most people realize, and yet you still show up with a light in your eyes. <span class="highlight">That’s strength, Tiffany.</span> Quiet and real. I admire that about you more than you know.</p>
 
-    <p>And just in case this thought ever wanders into your mind—you should never feel sorry or guilty for not feeling the same way about me. My heart chose this. I let my feelings for you grow because being around you reminded me of something I thought I’d lost—a softer, more caring side of myself that I had buried for a long time. You didn’t ask for any of this. I chose to fall for you, and I chose to tell you, knowing full well that you might not feel the same way. And even now, I don’t regret it—because you helped me rediscover a part of myself I never thought would return. That gift alone… it means more than you know.</p>
+  <p>More than anything, I just wanted to see you truly happy—in every way that matters. And I’ll be honest: part of me quietly wished that maybe, just maybe, I could be the one beside you in that happiness. I think a part of me was hoping you’d become my Iris—not just someone I cared deeply about, but someone I could share something real with.</p>
 
-    <p>I’m really going to miss seeing you at work and hanging out with you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it. Whether life keeps us close or drifts us apart, just know I’ll always look back on you with a smile. I've said it before and I'll say it again but I’ll always be rooting for you. I’m proud of who you are and who you’re becoming. You got this—I believe in you. If life ever feels heavy, or if you ever need someone—really need someone—I’m here. Always. You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
+  <p>There’s a lyric in that song that says, <span class="lyrics">“You’re the closest to heaven that I’ll ever be, and I don’t want to go home right now.”</span> And to me, that captured what it felt like being around you. In those small, quiet moments—your laughter, your stories, your quirks—it felt like time slowed down, like things just… made sense. Like I was exactly where I needed to be.</p>
 
-    <p style="text-align: center; font-style: italic; font-size: 1.1rem; color: #a44c70;">
-      To me, you’ll always be <span class="marilag">marilag</span> — graceful, strong, and quietly beautiful in every way that matters.
-    </p>
+  <p>And just in case this thought ever wanders into your mind—you should never feel sorry or guilty for not feeling the same way about me. <span class="soft">My heart chose this.</span> I allowed my feelings for you to grow because being around you reminded me of something I thought I’d lost—a softer, more caring side of myself that I had buried for a long time. You didn’t ask for any of this. I chose to fall for you, and I chose to tell you, knowing full well that you might not feel the same way. And even now, I don’t regret it—because you helped me rediscover a part of myself I never thought would return. That gift alone… it means more than you know.</p>
 
-    <p class="signature">—Louis</p>
+  <div class="section-break"></div>
 
-    <div class="lyrics">
-      “And when Tiffany smiles<br>
-      The whole world stops and stares for a while<br>
-      'Cause, girl, you're amazing<br>
-      Just the way you are.”<br> — Bruno Mars 🎶
-    </div>
-  </div>
+  <p>The next 6 months, I’ll be focusing on becoming the best version of myself—not only for me but so that when I finally meet the one for me, I will be the right person for both of us. And if you ever find yourself ready to let love in again, I hope the love you find is the kind that lasts—<span class="highlight">something strong, safe, and beautiful.</span> The kind of love you deserve. I hope it fills your heart without ever weighing it down.</p>
+
+  <p>I’m really going to miss seeing you at work and hanging out with you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it. Whether life keeps us close or drifts us apart, just know I’ll always look back on you with a smile. I've said it before and I'll say it again but I’ll always be rooting for you. I’m proud of who you are and who you’re becoming.</p>
+
+  <div class="standout">You got this—I believe in you.</div>
+
+  <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. Always. You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
+
+  <div class="closer">To me, you’ll always be marilag — graceful, strong, and quietly beautiful in every way that matters.</div>
+
+  <p class="lyrics">“And when Tiffany smiles<br>
+  The whole world stops and stares for a while<br>
+  'Cause, girl, you're amazing<br>
+  Just the way you are.”<br>
+  — Bruno Mars</p>
+
+</body>
+</html>
+
+    }
+
+    .highlight {
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    .soft {
+      font-style: italic;
+      color: #cc3366;
+    }
+
+    .section-break {
+      margin: 40px 0;
+      border-top: 2px dashed #ffb6c1;
+    }
+
+    .standout {
+      text-align: center;
+      font-size: 22px;
+      color: #ff1493;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .closer {
+      font-size: 20px;
+      color: #c71585;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .lyrics {
+      color: #8b008b;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>To Tiffany</h1>
+
+  <p>I know we might not ever become anything more than friends, and as much as that stings a little, I respect where you’re at and how you feel. <span class="soft">This is from the heart:</span> I’m really sorry if I ever made you feel pressured to reciprocate my feelings or put you in an uncomfortable position. That was never my intention, and I truly regret if it came across that way. Thank you for sharing your stories, your humor, and everything you’ve been through with me—it’s meant more than you probably realize.</p>
+
+  <div class="section-break"></div>
+
+  <p>Before I go, I wanted to give you these gifts that I thought of specifically for you. I first got the idea for them the night you had boba with me and shared your vulnerable side—it really stayed with me. These are simple, meaningful things I thought would express my admiration and care, and I wanted you to have something personal that reflects your unique self.</p>
+
+  <p>For the girl who is the definition of "<span class="highlight">Ms. Independent</span>" but still lights up just a little more when princess treatment is involved—these are for you.</p>
+
+  <p><strong>Batman necklace:</strong> I had your name engraved in it to signify that this necklace is uniquely yours. It reminded me of that phone case you used to have—how your friends said it represented you. It made me think of how strong, unique, and quietly powerful you are. Even if you don’t always see it, just know I do. That strength—subtle but unmistakable—was one of the first things that drew me to you.</p>
+
+  <p><strong>Cat bracelet:</strong> I got it with Miso’s name because I wanted you to look at it and be reminded of the little things that bring you peace—the parts of your world that make you smile, laugh, or feel okay, even for a moment. I notice you light up at the smallest things, and that’s something really beautiful to see.</p>
+
+  <div class="section-break"></div>
+
+  <p>You’ve been through more than most people realize, and yet you still show up with a light in your eyes. <span class="highlight">That’s strength, Tiffany.</span> Quiet and real. I admire that about you more than you know.</p>
+
+  <p>More than anything, I just wanted to see you truly happy—in every way that matters. And I’ll be honest: part of me quietly wished that maybe, just maybe, I could be the one beside you in that happiness. I think a part of me was hoping you’d become my Iris—not just someone I cared deeply about, but someone I could share something real with.</p>
+
+  <p>There’s a lyric in that song that says, <span class="lyrics">“You’re the closest to heaven that I’ll ever be, and I don’t want to go home right now.”</span> And to me, that captured what it felt like being around you. In those small, quiet moments—your laughter, your stories, your quirks—it felt like time slowed down, like things just… made sense. Like I was exactly where I needed to be.</p>
+
+  <p>And just in case this thought ever wanders into your mind—you should never feel sorry or guilty for not feeling the same way about me. <span class="soft">My heart chose this.</span> I allowed my feelings for you to grow because being around you reminded me of something I thought I’d lost—a softer, more caring side of myself that I had buried for a long time. You didn’t ask for any of this. I chose to fall for you, and I chose to tell you, knowing full well that you might not feel the same way. And even now, I don’t regret it—because you helped me rediscover a part of myself I never thought would return. That gift alone… it means more than you know.</p>
+
+  <div class="section-break"></div>
+
+  <p>The next 6 months, I’ll be focusing on becoming the best version of myself—not only for me but so that when I finally meet the one for me, I will be the right person for both of us. And if you ever find yourself ready to let love in again, I hope the love you find is the kind that lasts—<span class="highlight">something strong, safe, and beautiful.</span> The kind of love you deserve. I hope it fills your heart without ever weighing it down.</p>
+
+  <p>I’m really going to miss seeing you at work and hanging out with you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it. Whether life keeps us close or drifts us apart, just know I’ll always look back on you with a smile. I've said it before and I'll say it again but I’ll always be rooting for you. I’m proud of who you are and who you’re becoming.</p>
+
+  <div class="standout">You got this—I believe in you.</div>
+
+  <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. Always. You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
+
+  <div class="closer">To me, you’ll always be marilag — graceful, strong, and quietly beautiful in every way that matters.</div>
+
+  <p class="lyrics">“And when Tiffany smiles<br>
+  The whole world stops and stares for a while<br>
+  'Cause, girl, you're amazing<br>
+  Just the way you are.”<br>
+  — Bruno Mars</p>
+
 </body>
 </html>
