@@ -14,10 +14,9 @@
       max-width: 800px;
       margin: auto;
       border: 3px dashed #ffb6c1;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hello_Kitty_Bow.svg/800px-Hello_Kitty_Bow.svg.png');
-      background-repeat: no-repeat;
-      background-size: 100px;
-      background-position: top right;
+      background-image: url('https://www.transparenttextures.com/patterns/hello-kitty.png');
+      background-repeat: repeat;
+      background-size: 120px;
     }
 
     h1 {
@@ -26,6 +25,14 @@
       font-weight: 600;
       font-size: 36px;
       margin-bottom: 40px;
+    }
+
+    h1::before {
+      content: "🎀 ";
+    }
+
+    h1::after {
+      content: " 🎀";
     }
 
     p {
@@ -45,7 +52,10 @@
 
     .section-break {
       margin: 40px 0;
-      border-top: 2px dashed #ffb6c1;
+      border-top: 3px dotted #ffc0cb;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hello_Kitty_Bow.svg/800px-Hello_Kitty_Bow.svg.png') center no-repeat;
+      background-size: 30px;
+      height: 30px;
     }
 
     .standout {
@@ -86,6 +96,14 @@
       margin-bottom: 1rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       font-size: 0.96rem;
+      position: relative;
+    }
+
+    .gift-list li::before {
+      content: "🎀";
+      position: absolute;
+      left: -25px;
+      top: 12px;
     }
 
     .gift-list li:hover {
@@ -116,6 +134,16 @@
       color: #888;
       font-style: italic;
       margin-bottom: 20px;
+    }
+
+    .emphasized.soft-spot {
+      color: #d63384;
+      background-color: #ffe4ec;
+      padding: 2px 6px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px #ffc0cb;
+      font-weight: bold;
+      font-style: italic;
     }
   </style>
 </head>
@@ -149,13 +177,13 @@
 
   <div class="section-break"></div>
 
-  <p>While I'm away for the next 6 months, I’ll be focusing on becoming the best version of myself—not only for me but so that when I finally meet the one for me, I will be the right person for both of us. And my hope is that if you ever find yourself ready to let love in again, I hope the love you find is the kind that lasts—<span class="highlight">something strong, safe, and beautiful.</span> The kind of love you deserve. I hope it fills your heart without ever weighing it down. I'll pray for that for you until it comes true.</p>
+  <p>While I'm away for the next 6 months, I’ll be focusing on becoming the best version of myself—not only for me but so that when I finally meet the one for me, I will be the right person for both of us. And if you ever find yourself ready to let love in again, I hope the love you find is the kind that lasts—<span class="highlight">something strong, safe, and beautiful.</span> The kind of love you deserve. I hope it fills your heart without ever weighing it down. I'll pray for that until it comes true for you.</p>
 
   <p>I’m really going to miss seeing you at work and hanging out with you—but more than that, I’m grateful for every laugh, every moment, every random thing you said that made me smile without even knowing it. Whether life keeps us close or drifts us apart, just know I’ll always look back on you with a smile. I've said it before and I'll say it again but I’ll always be rooting for you. I’m proud of who you are and who you’re becoming.</p>
 
   <div class="standout">You got this—I believe in you.</div>
 
-  <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. I will always have a <a href="https://open.spotify.com/track/7FB6Nx7TK8y1Ke8dY6ROpQ?si=faffdb43694d48d5" target="_blank" class="interactive-link"><u><span class="emphasized">soft spot</span></u></a> for you. You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
+  <p>If life ever feels heavy, or if you ever need someone—really need someone—I’m here. I will always have a <a href="https://open.spotify.com/track/7FB6Nx7TK8y1Ke8dY6ROpQ?si=faffdb43694d48d5" target="_blank" class="interactive-link"><u><span class="emphasized soft-spot">soft spot</span></u></a> for you. You’ve been one of the sweetest, brightest parts of my life so far. Thank you for letting me see even a small part of your world.</p>
 
   <div class="closer">To me, you’ll always be marilag — graceful, strong, and quietly beautiful in every way that matters.</div>
 
